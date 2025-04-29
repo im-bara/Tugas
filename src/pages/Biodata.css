@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e1e, #3b3b3b); 
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  flex: 1;
+}
+
+.biodata-page {
+  min-height: 100vh;
+  width: flex;
+  background: linear-gradient(135deg, #1e1e1e, #3b3b3b);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: #f5f5f5;
+}
+
+.biodata-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    gap: 2rem; 
+    align-items: center; 
+    flex-wrap: wrap; 
+  }
+  
+
+.avatar-card {
+    background: linear-gradient(to bottom right, rgba(255,215,0,0.3), rgba(255,255,255,0.1));
+    border: 2px solid rgba(255, 215, 0, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.avatar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+}
+  
+.avatar-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+  
+
+.biodata-title {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.biodata-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.biodata-content li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  border-left: 3px solid #ffd700;
+  padding-left: 1rem;
+}
+
+.biodata-quote {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #ffa500;
+}
+
+.biodata-right {
+    flex: 1; 
+    min-width: 300px; 
+  }
+  
+  .biodata-right h1 {
+    font-size: 1.8rem;
+    color: #ffd700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+  
+  .biodata-right p, 
+  .biodata-right ul, 
+  .biodata-right li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.my-name {
+    text-align: center;
+}

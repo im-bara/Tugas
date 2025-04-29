@@ -1,0 +1,265 @@
+/* App.css */
+.App {
+  font-family: 'Cinzel', serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e1e, #3b3b3b); 
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  flex: 1;
+}
+
+.content-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+.main-content {
+  padding: 2rem;
+  background-color: #f4f1e1;
+  margin-top: 80px; 
+  min-height: calc(100vh - 200px); 
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: #937147;
+  padding: 3rem;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #f5d300;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* ========================= Main Section Styling ========================= */
+.what-i-do-section {
+  background: linear-gradient(45deg, #d4af7f, #ffebcd); 
+  padding: 60px 20px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.what-i-do-section:hover {
+  transform: scale(1.05); 
+}
+
+.section-title {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  color: #4e3629; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeInUp 2s ease-out; 
+}
+
+.section-desc,
+.section-desc-id {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #3d2b1f;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  animation: fadeInUp 3s ease-out;
+  opacity: 1;
+}
+
+.section-desc-id {
+  margin-top: 20px;
+  color: #2f4f4f; 
+}
+
+/* Animasi fade-in */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================= Thumbnail Styling ========================= */
+.media-thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 50px;
+  padding: 0 2rem;
+}
+
+.thumbnail {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(245,245,245,0.8));
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  width: 380px;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.7s ease, filter 0.7s ease;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.1) rotate(1deg);
+  filter: brightness(1.1) contrast(1.2);
+}
+
+.thumbnail p {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  padding: 15px;
+  background-color: #294d4a;
+  color: #f8f8f8;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease, letter-spacing 0.5s ease;
+}
+
+.thumbnail:hover p {
+  background-color: #ffd900;
+  letter-spacing: 2px;
+}
+
+
+/* ========================= Responsive Styling ========================= */
+@media screen and (max-width: 768px) {
+  .media-thumbnails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thumbnail {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Button Style */
+.explore-btn {
+  background-color: #6b4f1d;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #7c5e2d;
+}
+
+/* Section for Thumbnails */
+.media-thumbnails {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.thumbnail {
+  background: #3a2d21;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbnail p {
+  color: white;
+  text-align: center;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

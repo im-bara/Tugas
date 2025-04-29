@@ -1,0 +1,35 @@
+/* Footer.css */
+
+.footer {
+  background: linear-gradient(to right, #5C4033, #D2B48C); /* Tan Color*/
+  color: #000000;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  border-top: 3px solid #8B4513;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  transition: color 0.3s ease;
+}
+
+.footer p:hover {
+  color: #ffd700; /*Golden Brown*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e1e, #3b3b3b); 
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  flex: 1;
+}
